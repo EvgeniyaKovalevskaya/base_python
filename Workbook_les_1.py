@@ -17,3 +17,9 @@ print(int(8.89))
 googol = 10**100
 print(googol)
 
+say = 'A man. \nA cat. \n\tA dog.'
+print(say)
+
+test = 'asdfggfgfgg'
+print(test[0:6:2])
+

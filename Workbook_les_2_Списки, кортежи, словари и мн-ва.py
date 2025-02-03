@@ -1,7 +1,7 @@
 empty_list = []
 names = ['Ann', 'Max', 'Lin', 'Kate']
 
-# Function list
+# СПИСКИ
 print(list('cat'))
 print(list(names))
 print(names[-1])
@@ -76,5 +76,142 @@ numbers = [3, 78, 9, 45.3, 0.1]
 numbers.sort()
 print(numbers)
 print(len(birds))
+
+# #  Ф-ия копирования - copy(), присвоения - list()
+# a = [1, 2, 3]
+# b = a.copy()
+# print(b)
+#
+# c = list(a)
+# print(c)
+#
+# d = a[:]
+# print(d)
+# d[1] = 'two'
+# print(d)
+
+## КОРТЕЖИ - неизменяемы!!!
+empty_tuple = ()
+one_marx = 'Groo'
+print(one_marx)
+
+marx_tuple = 'Groo', 'Choo', 'Miy'
+print(marx_tuple)
+a, b, c = marx_tuple # распаковка кортежа
+print(a)
+print(b)
+
+#  Ф-ия tuple() создает кортежи из других объектов
+marx_list = ['Anny', 'Kenny']
+print(tuple(marx_list))
+
+## СЛОВАРИ - порядок эл-в не имеет значения, ключ - значение
+empty_dict = {}
+
+lot = [('a', 'b'), ('c', 'd')]
+print(dict(lot))
+
+my_dict = {
+    'name': 'Ann',
+    'age': '23',
+    'job': 'Manager',
+}
+
+my_dict['hobby'] = 'music'
+my_dict['age'] = '38'
+print(my_dict)
+
+#  Ф-ия  update() - объединение словарей
+new_dict = {
+    'lang': 'RUS',
+    'theme': 'Maths'
+}
+
+my_dict.update(new_dict)
+print(my_dict)
+
+del my_dict['lang']
+print(my_dict)
+
+# #  Ф-ия  clear()
+# my_dict.clear()
+# print(my_dict)
+
+print('lang' in my_dict) # проверка на наличие
+
+print(my_dict['age'])
+print(my_dict.get('them', 'it is not in'))
+
+#  Ф-ия  keys()
+print(my_dict.keys())
+
+# Использовать list() - чтобы преобразовать ключи в список, values() - значения, items() - пары ключ-значение
+print(list(my_dict.keys()))
+print(list(my_dict.values()))
+print(list(my_dict.items()))
+
+second_dict = my_dict.copy()
+print(my_dict.copy())
+
+# МНОЖЕСТВА - имеют только ключи
+empty_set = set()
+print(empty_set)
+
+even_numbers = {0, 2, 4, 6, 8}
+print(even_numbers)
+
+print(set('kal'))
+print(set(('kal', 'mas')))
+
+print(set({'apple': 'red', 'orange': 'orange'})) # выводит только ключи из словаря
+
+# Проверка на наличие значения с помощью in
+drinks = {
+    'martini': {'vodka', 'vermouth'},
+    'white russian': {'vodka', 'kahlua'},
+    'screwdriver': {'orange juice', 'vodka'}
+}
+
+for name, contents in drinks.items():
+    if 'vodka' in contents and not ('kahlua' in contents):
+        print(name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

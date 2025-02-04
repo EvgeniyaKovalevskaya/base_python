@@ -176,7 +176,44 @@ for name, contents in drinks.items():
     if 'vodka' in contents and not ('kahlua' in contents):
         print(name)
 
+martin= drinks['martini']
+wruss = drinks['white russian']
 
+print(martin & wruss)
+print(martin.intersection(wruss))
+
+print(martin | wruss)
+print(martin.union(wruss))
+
+print(martin.difference(wruss))
+
+years_list = [1986, 1987, 1988, 1989, 1990]
+print(years_list[3])
+print(years_list[-1])
+
+things = ['moz', 'cind', 'salm']
+things[1] = 'Cind'
+print(things)
+
+things[0] = things[0].upper()
+print(things)
+
+things.pop(2)
+print(things)
+
+surprise = ['Groucho', 'Chico', 'harpo']
+surprise[2] = 'Harpo'
+print(surprise)
+
+e2f = {
+    'dog': 'chien',
+    'cat':'chat',
+    'walrus': 'morse',
+}
+print(e2f.get('walrus'))
+
+f2e = list(e2f.items())
+print(f2e)
 
 
 

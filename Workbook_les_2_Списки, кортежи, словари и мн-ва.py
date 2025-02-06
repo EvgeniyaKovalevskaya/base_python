@@ -251,6 +251,26 @@ print(life.keys())
 print(life['animals'].keys())
 print(life['animals']['cats'])
 
+# Continuation \ - возобновление
+alphabet = 'abcdefg' +\
+    'hijklmnop' +\
+    'qrstuv' +\
+    'wxyz'
+
+print(alphabet)
+
+furry = True
+small = True
+if furry:
+    if small:
+        print("It's a cat")
+    else:
+        print("It's a bear")
+else:
+    if small:
+        print("It's a skink!")
+    else:
+        print("it's a human")
 
 
 

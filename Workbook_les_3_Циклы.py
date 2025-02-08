@@ -70,3 +70,35 @@ for x in range(0, 12, 3):
 
 print(list(range(0, 12, 3)))
 
+# Включения
+number_list = []
+# Var 1
+# number_list.append(1)
+# print(number_list)
+# number_list.append(9)
+# print(number_list)
+
+# Var 2
+# for number in range(1, 6):
+#     number_list.append(number)
+# print(number_list)
+
+# Var 3
+# number_list = list(range(1, 6))
+# print(number_list)
+#
+# # Var 4 Включение
+# number_list - [number for number in range(1, 6)]
+# print(number_list)
+
+# a_list = [number for number in range(1, 6) if number % 2 == 1]
+# print(a_list)
+#
+# rows = range(1, 4)
+# cols = range(1, 3)
+# for row in rows:
+#     for col in cols:
+#         print(row, col)
+
+
+rows =

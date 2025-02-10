@@ -83,3 +83,5 @@ print('Объем =', val)
 square = 6 * (int(length_side) ** 2)
 print('Площадь полной поверхности =', square)
 
+
+

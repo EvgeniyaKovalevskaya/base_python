@@ -110,3 +110,22 @@ for cell in cells:
 # Распаковка кортежа
 for row, col in cells:
     print(row, col)
+
+def print_args(*args):  # Символ * группирует позиционные элементы в кортеж
+    print('Positional agrument tuple:', args)
+print_args(7, 8, 'ho')
+
+def print_more(required1, required2, *args):
+    print('Need this one:', required1)
+    print('Need this one too:', required2)
+    print('All the rest:', args)
+print_more('one', 'too', 'the rest 1', 'the rest 2')
+
+# ** Сгруппировать ключевые слова с аргументами в словарь
+def print_kwargs(**kwargs):
+    print('Keyword arguments:', kwargs)
+print_kwargs(wine='merlot', entree='mutton', dessert='ice')
+
+
+
+

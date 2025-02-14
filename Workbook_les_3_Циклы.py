@@ -170,3 +170,34 @@ def knights(saying):
     return inner(saying)
 print(knights('Hi'))
 
+# lambda() !!!! important to understand
+def edit_story(words, func):
+    for word in words:
+        print(func(word))
+stairs = ['Thud', 'meow', 'hiss']
+
+# def enliven(word):
+#     return word.capitalize() + '!'
+#
+# edit_story(stairs, enliven)
+
+# lambda  вместо короткой ф-ии enliven
+edit_story(stairs, lambda word: word.capitalize() + '!')
+edit_story(stairs, lambda word: word.lower() + '!')
+
+
+def big_love(words, func):
+    for word in words:
+        print(func(word))
+love = ['Honey', 'Lovely', 'Sweety']
+
+big_love(love, lambda word: 'My '+ word.title())
+
+def best_friends(friends, funct):
+    for friend in friends:
+        print(funct(friend))
+friends_names = ['Misha', 'Sasha', "Anna"]
+
+best_friends(friends_names, lambda friend: friend.swapcase())
+
+

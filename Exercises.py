@@ -124,6 +124,6 @@
 
 def strsort(a_string):
     return ''.join(sorted(a_string))
-print(strsort('gfrtsawer'f))
+print(strsort('gfrtsawer'))
 print(strsort(['many, any, deny']))
 
